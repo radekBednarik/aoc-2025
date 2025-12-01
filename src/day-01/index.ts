@@ -4,6 +4,12 @@ async function main() {
 	const rawData = await readInput("src/day-01/input.txt");
 	const instructions = rawData.trim().split("\n");
 
+	partOne(instructions);
+}
+
+await main();
+
+function partOne(instructions: string[]) {
 	let currentPosition = 50;
 	let zeroPositionCounter = 0;
 
@@ -24,5 +30,3 @@ async function main() {
 
 	console.log("zero position counter: ", zeroPositionCounter);
 }
-
-await main();
