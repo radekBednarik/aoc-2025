@@ -5,7 +5,7 @@ async function main() {
 	const instructions = rawData.trim().split("\n");
 
 	let currentPosition = 50;
-	let counter = 0;
+	let zeroPositionCounter = 0;
 
 	for (const instruction of instructions) {
 		const direction = instruction.slice(0, 1);
@@ -18,11 +18,11 @@ async function main() {
 		}
 
 		if (currentPosition % 100 === 0) {
-			counter = counter + 1;
+			zeroPositionCounter = zeroPositionCounter + 1;
 		}
 	}
 
-	console.log(counter);
+	console.log("zero position counter: ", zeroPositionCounter);
 }
 
 await main();
