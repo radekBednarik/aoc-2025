@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "d-1": "pnpm exec tsx src/day-01/index.ts",
+    "d-2": "pnpm exec tsx src/day-02/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
