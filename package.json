@@ -9,6 +9,7 @@
     "d-2": "pnpm exec tsx src/day-02/index.ts",
     "d-3": "pnpm exec tsx src/day-03/index.ts",
     "d-4": "pnpm exec tsx src/day-04/index.ts",
+    "d-5": "pnpm exec tsx src/day-05/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
