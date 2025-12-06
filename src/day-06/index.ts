@@ -4,6 +4,14 @@ import { readInput } from "../common/utils.js";
 async function main() {
 	const input = await readInput("./src/day-06/input.txt");
 	const rows = input.trim().split("\n");
+	partOne(rows);
+}
+
+await main();
+
+function partOne(rows: string[]) {
+	console.time("part-one-exec-time");
+
 	const operationsRow = rows
 		.slice(rows.length - 1)
 		.map((row) => row.trim())[0]
@@ -12,14 +20,6 @@ async function main() {
 		.slice(0, rows.length - 1)
 		.map((row) => row.trim())
 		.map((row) => row.split(/\s+/));
-
-	partOne(operationsRow, numbers);
-}
-
-await main();
-
-function partOne(operationsRow: string[], numbers: string[][]) {
-	console.time("day-one");
 
 	let sum = 0;
 
@@ -36,7 +36,7 @@ function partOne(operationsRow: string[], numbers: string[][]) {
 		sum += eval(op);
 	}
 
-	console.timeEnd("day-one");
+	console.timeEnd("part-one-exec-time");
 
 	console.log("part one: ", sum);
 }
