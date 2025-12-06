@@ -10,7 +10,8 @@
     "d-3": "pnpm exec tsx src/day-03/index.ts",
     "d-4": "pnpm exec tsx src/day-04/index.ts",
     "d-5": "pnpm exec tsx src/day-05/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "d-6": "pnpm exec tsx src/day-06/index.ts",
+    "format": "prettier ./src --write"
   },
   "keywords": [],
   "author": "",
